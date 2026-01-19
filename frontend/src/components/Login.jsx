@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="min-h-screen w-full bg-blue-50 flex items-center justify-center p-6 select-none">
+    <div className="min-h-screen w-full bg-blue-50 flex items-center justify-center p-6 caret-transparent ">
       <div className="w-full max-w-md bg-blue-100 rounded-2xl shadow-xl p-8 md:p-10">
         {/* Logo */}
         <div className="flex items-center gap-2 mb-6">
@@ -25,13 +25,21 @@ const Login = () => {
           <div className="text-right text-xs text-blue-600 font-medium cursor-pointer">
             Forgot Password?
           </div>
+          <div className="flex justify-center gap-4">
+            <button
+              type="button"
+              className="w-full mt-2 rounded-full bg-blue-500 py-3 text-sm font-semibold tracking-wide cursor-pointer text-white shadow-lg transition hover:-translate-y-0.5"
+            >
+              Admin Login
+            </button>
 
-          <button
-            type="button"
-            className="w-full mt-2 rounded-xl bg-blue-500 py-3 text-sm font-semibold tracking-wide cursor-pointer text-white shadow-lg transition hover:-translate-y-0.5"
-          >
-            Login to account
-          </button>
+            <button
+              type="button"
+              className="w-full mt-2 rounded-full bg-blue-500 py-3 text-sm font-semibold tracking-wide cursor-pointer text-white shadow-lg transition hover:-translate-y-0.5"
+            >
+              User Login
+            </button>
+          </div>
 
           <div className="flex items-center gap-3 text-xs text-gray-400 mt-4">
             <div className="flex-1 h-px bg-gray-200" />
@@ -44,11 +52,11 @@ const Login = () => {
         <p className="mt-6 text-xs text-gray-500 text-center">
           Don’t have an account?{" "}
           <Link
-              to="/Signup"
-              className="text-blue-600 font-semibold cursor-pointer"
-            >
-              Create New!
-            </Link>
+            to="/Signup"
+            className="text-blue-600 font-semibold cursor-pointer"
+          >
+            Create New!
+          </Link>
         </p>
       </div>
     </div>

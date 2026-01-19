@@ -1,4 +1,3 @@
-
 import { Link, NavLink } from "react-router-dom";
 
 const Home = () => {
@@ -19,11 +18,11 @@ const Home = () => {
 
             <div className="mt-7">
               <Link
-              to="/Signup"
-              className="rounded-full bg-blue-600 px-6 py-3 text-sm font-medium text-white hover:bg-blue-700 transition"
-            >
-              Get Started
-            </Link>
+                to="/Signup"
+                className="rounded-full bg-blue-500 px-6 py-3 text-sm font-medium text-white hover:bg-blue-700 transition"
+              >
+                Get Started
+              </Link>
             </div>
           </div>
 

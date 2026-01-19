@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './components/Home';
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
 
 export default function App() {
   return (
@@ -13,12 +14,13 @@ export default function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Signup" element={<Signup/>} />
-            <Route path="/Login" element={<Login/>} />
+            <Route path="/Signup" element={<Signup />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
           </Routes>
         </div>
         <Footer />
       </div>
     </Router>
-  )
+  );
 }
