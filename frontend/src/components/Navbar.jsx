@@ -2,12 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="w-full flex justify-center bg-blue-50">
+    <div className="sticky top-0 z-50 w-full flex justify-center bg-blue-50 caret-transparent">
       <nav className="w-[90%] max-w-7xl rounded-2xl bg-blue-50 px-8 py-4">
         <div className="flex items-center">
           {/* Left group: Logo + links */}
           <div className="flex items-center gap-8 text-sm">
-            <Link to="/" className="text-lg font-semibold text-gray-900">
+            <Link to="/" className="text-2xl font-semibold text-blue-900">
               CreditScore
             </Link>
 
@@ -20,28 +20,6 @@ export default function Navbar() {
               }
             >
               Dashboard
-            </NavLink>
-
-            <NavLink
-              to="/risk"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-blue-600 font-medium"
-                  : "text-gray-600 hover:text-gray-900 transition"
-              }
-            >
-              Risk
-            </NavLink>
-
-            <NavLink
-              to="/history"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-blue-600 font-medium"
-                  : "text-gray-600 hover:text-gray-900 transition"
-              }
-            >
-              History
             </NavLink>
           </div>
 

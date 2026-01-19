@@ -1,13 +1,11 @@
 const Signup = () => {
   return (
-    <div className="min-h-screen w-full bg-blue-50 flex items-center justify-center p-6">
+    <div className="min-h-screen w-full bg-blue-50 flex items-center justify-center p-6 caret-transparent">
       <div className="w-full max-w-5xl overflow-hidden rounded-2xl]">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* LEFT PANEL */}
           <div className="relative bg-blue-100 rounded-2xl p-10 hidden md:block">
-            <p className="text-xs font-semibold text-slate-500">
-              WELCOME TO
-            </p>
+            <p className="text-xs font-semibold text-slate-500">WELCOME TO</p>
             <h1 className="mt-2 text-3xl font-extrabold tracking-widest text-gray-900">
               CreditScore
             </h1>
@@ -40,22 +38,10 @@ const Signup = () => {
 
                 <button
                   type="button"
-                  className="w-full mt-2 rounded-xl bg-blue-500 py-3 text-sm font-semibold tracking-wide text-white shadow-lg transition hover:-translate-y-0.5"
+                  className="w-full mt-2 rounded-xl bg-blue-500 py-3 text-sm font-semibold cursor-pointer tracking-wide text-white shadow-lg transition hover:-translate-y-0.5"
                 >
                   CREATE AN ACCOUNT
                 </button>
-
-                <div className="flex items-center gap-3 text-xs text-slate-400 mt-4">
-                  <div className="flex-1 h-px bg-slate-200" />
-                  Sign up with
-                  <div className="flex-1 h-px bg-slate-200" />
-                </div>
-
-                <div className="flex justify-center gap-3 mt-4">
-                  <SocialButton label="Google" />
-                  <SocialButton label="X" />
-                  <SocialButton label="Facebook" />
-                </div>
               </form>
 
               <p className="mt-6 text-xs text-slate-500 text-center">
@@ -84,17 +70,6 @@ const Input = ({ label, type = "text", placeholder }) => {
         className="w-full h-11 rounded-xl border border-indigo-100 bg-indigo-50/60 px-4 text-sm text-slate-800 outline-none transition focus:border-indigo-300 focus:shadow-md"
       />
     </div>
-  );
-};
-
-const SocialButton = ({ label }) => {
-  return (
-    <button
-      type="button"
-      className="h-11 w-11 rounded-xl border border-indigo-100 bg-white shadow-md flex items-center justify-center text-xs font-semibold text-slate-600 hover:-translate-y-0.5 transition"
-    >
-      {label[0]}
-    </button>
   );
 };
 
